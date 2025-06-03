@@ -133,13 +133,13 @@ if __name__ == "__main__":
     bracket_str = "A(B(C,D(E,F)),G(,H))"
     print(f"括号表示法: {bracket_str}")
 
-    # # 1. 从括号表示法转化为二叉树
-    # root = build_tree_from_bracket(bracket_str)
-    # print(f"构建二叉树成功! 根节点: {root.data}")
-    #
-    # # 2. 将二叉树转换回括号表示法
-    # reconstructed = tree_to_bracket(root)
-    # print(f"重新生成的括号表示法: {reconstructed}")
+    # 1. 从括号表示法转化为二叉树
+    root = build_tree_from_bracket(bracket_str)
+    print(f"构建二叉树成功! 根节点: {root.data}")
+
+    # 2. 将二叉树转换回括号表示法
+    reconstructed = tree_to_bracket(root)
+    print(f"重新生成的括号表示法: {reconstructed}")
 
     # 3. 计算二叉树深度
     depth = bracket_depth(bracket_str)
